@@ -36,7 +36,7 @@ def removeAnswers():
         answers = []
         for para in wordDoc.paragraphs:
             try:
-                if para.text.split()[0] == "Answer:":
+                if para.text.split()[0] == ansform:
                     answers.append(para.text.split()[1])
                     para.text = ''
             except:
